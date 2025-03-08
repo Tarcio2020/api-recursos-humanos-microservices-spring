@@ -7,15 +7,15 @@ public class Payment implements Serializable{
 	private static final long serialVersionUID = 1L;
 
 	private String name;
-	private Double dailyIcome;
+	private Double dailyIncome;
 	private Integer days;
 	
 	public Payment() {
 	}
 
-	public Payment(String name, Double dailyIcome, Integer days) {
+	public Payment(String name, Double dailyIncome, Integer days) {
 		this.name = name;
-		this.dailyIcome = dailyIcome;
+		this.dailyIncome = dailyIncome;
 		this.days = days;
 	}
 
@@ -27,12 +27,12 @@ public class Payment implements Serializable{
 		this.name = name;
 	}
 
-	public Double getDailyIcome() {
-		return dailyIcome;
+	public Double getDailyIncome() {
+		return dailyIncome;
 	}
 
-	public void setDailyIcome(Double dailyIcome) {
-		this.dailyIcome = dailyIcome;
+	public void setDailyIncome(Double dailyIncome) {
+		this.dailyIncome = dailyIncome;
 	}
 
 	public Integer getDays() {
@@ -44,7 +44,7 @@ public class Payment implements Serializable{
 	}
 	
 	public double getTotal() {
-		return dailyIcome * days;
+		return dailyIncome * days;
 	}
 	
 }
